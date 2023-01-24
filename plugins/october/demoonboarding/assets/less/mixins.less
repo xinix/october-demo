@@ -1,0 +1,15 @@
+.image-sprite(@offsetX: 0, @offsetY: 0) {
+    background-image: url("https://octobercms-onboarding.s3.us-west-2.amazonaws.com/assets/images/onboarding-sprite.png");
+    background-position: -(@offsetX) -(@offsetY);
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+        only screen and (-o-min-device-pixel-ratio: 13/10),
+        only screen and (min-resolution: 120dpi) {
+            .image-sprite2x();
+    }
+}
+
+.image-sprite2x() {
+    background-image: url("https://octobercms-onboarding.s3.us-west-2.amazonaws.com/assets/images/onboarding-sprite%402x.png");
+    background-size: 618px 253px;
+}
